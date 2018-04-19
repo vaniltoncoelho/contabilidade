@@ -3,52 +3,32 @@ package br.com.comexport.contabilidade.entity;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@EqualsAndHashCode @ToString
 public class StatsLancamentoContabil implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
+	@Getter @Setter
 	private Long id;
+	
+	@Getter @Setter
 	private BigDecimal soma;
+	
+	@Getter @Setter
 	private BigDecimal min;
+	
+	@Getter @Setter
 	private BigDecimal max;
+	
+	@Getter @Setter
 	private BigDecimal media;
+	
+	@Getter @Setter
 	private BigDecimal qtde;
 	
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-	public BigDecimal getSoma() {
-		return soma;
-	}
-	public void setSoma(BigDecimal soma) {
-		this.soma = soma;
-	}
-	public BigDecimal getMin() {
-		return min;
-	}
-	public void setMin(BigDecimal min) {
-		this.min = min;
-	}
-	public BigDecimal getMax() {
-		return max;
-	}
-	public void setMax(BigDecimal max) {
-		this.max = max;
-	}
-	public BigDecimal getMedia() {
-		return media;
-	}
-	public void setMedia(BigDecimal media) {
-		this.media = media;
-	}
-	public BigDecimal getQtde() {
-		return qtde;
-	}
-	public void setQtde(BigDecimal qtde) {
-		this.qtde = qtde;
-	}
-
 }
